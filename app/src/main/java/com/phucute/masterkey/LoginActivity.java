@@ -12,7 +12,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.whyal.hackathondemo.R;
+
 
 public class LoginActivity extends AppCompatActivity {
 

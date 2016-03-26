@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.whyal.permission.Permission"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="Hour"
+            android:typeface="normal"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:padding="5px"         />
+        <EditText
+            android:id="@+id/hour_edit"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:hint="12"
+
+            android:textSize="20px"
+            android:gravity="center"
+            android:padding="5px"
+            android:numeric="integer"
+            android:maxLength="2"
+            />         <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="Minute"
+        android:typeface="normal"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:padding="5px"
+        android:layout_weight="0.14" />
+        <EditText
+            android:id="@+id/minute_edit"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:hint="00"
+
+            android:textSize="20px"
+            android:gravity="center"
+            android:padding="5px"
+            android:numeric="integer"
+            android:maxLength="2"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:id="@+id/monday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/linearLayout" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:id="@+id/tuesday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/monday"
+        android:layout_alignRight="@+id/saturday"
+        android:layout_alignEnd="@+id/saturday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:id="@+id/wednesday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/tuesday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:id="@+id/thursday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/wednesday"
+        android:layout_alignLeft="@+id/tuesday"
+        android:layout_alignStart="@+id/tuesday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        android:id="@+id/friday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/thursday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday"
+        android:id="@+id/saturday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/friday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday"
+        android:id="@+id/sunday"
+        android:textSize="30dp"
+        android:checked="false"
+        android:layout_below="@+id/saturday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:id="@+id/button3"
+
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+
+</RelativeLayout>

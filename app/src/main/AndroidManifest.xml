@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.whyal.hackathondemo">
+    package="com.phucute.masterkey">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -29,7 +29,8 @@
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".DangKy"></activity>
         <activity android:name=".UseCamera"></activity>
-
+        <activity android:name=".DoorSetting"></activity>
+        <activity android:name=".SetTime"></activity>
 
         <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
 

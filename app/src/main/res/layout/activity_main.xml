@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/camera_view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/code_info"
+        android:textSize="20sp"
+        android:text="..."
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This is:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/camera_view"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN"
+        android:id="@+id/openclose_button"
+        android:layout_below="@+id/code_info"
+        android:layout_toLeftOf="@+id/code_info"
+        android:layout_toStartOf="@+id/code_info" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMEMBER"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/openclose_button"
+        android:layout_toRightOf="@+id/code_info"
+        android:layout_toEndOf="@+id/code_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="..."
+        android:id="@+id/door_status"
+        android:layout_below="@+id/openclose_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+</RelativeLayout>
