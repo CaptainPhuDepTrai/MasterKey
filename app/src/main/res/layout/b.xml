@@ -59,6 +59,56 @@
             android:maxLength="2"
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:text="Hour"
+            android:typeface="normal"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:padding="5px"         />
+        <EditText
+            android:id="@+id/hour_edit2"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:hint="12"
+
+            android:textSize="20px"
+            android:gravity="center"
+            android:padding="5px"
+            android:numeric="integer"
+            android:maxLength="2"
+            />         <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="Minute"
+        android:typeface="normal"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:padding="5px"
+        android:layout_weight="0.14" />
+        <EditText
+            android:id="@+id/minute_edit2"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:hint="00"
+
+            android:textSize="20px"
+            android:gravity="center"
+            android:padding="5px"
+            android:numeric="integer"
+            android:maxLength="2"
+            />
+    </LinearLayout>
 
 
 
@@ -74,7 +124,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="33dp"
-        android:layout_below="@+id/linearLayout" />
+        android:layout_below="@+id/linearLayout2" />
 
     <CheckBox
         android:layout_width="wrap_content"

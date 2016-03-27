@@ -48,7 +48,8 @@ public class SetTime extends Activity{
 
         final EditText hourEdit = (EditText) findViewById(R.id.hour_edit);
         final EditText minuteEdit = (EditText) findViewById(R.id.minute_edit);
-
+        final EditText hourEdit2 = (EditText) findViewById(R.id.hour_edit2);
+        final EditText minuteEdit2 = (EditText) findViewById(R.id.minute_edit2);
 
 
         final Button button = (Button) findViewById(R.id.button3);
@@ -68,7 +69,8 @@ public class SetTime extends Activity{
                 }
                 else {
                     ArrayList <Day> mang = new ArrayList<Day>();
-                    String h =hourEdit.getText().toString()+minuteEdit.getText().toString();
+                    String h =hourEdit.getText().toString()+minuteEdit.getText().toString()
+                            +"*"+hourEdit2.getText().toString()+minuteEdit2.getText().toString();
                     if (monday.isChecked()) {
                         for (String each :
                                 DoorSetting.tick) {
