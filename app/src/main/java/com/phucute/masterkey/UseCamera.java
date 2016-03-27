@@ -47,10 +47,10 @@ public class UseCamera extends AppCompatActivity {
             public void onClick(View v) {
                 if (opencloseBtn.getText().equals("OPEN")) {
                     opencloseBtn.setText("CLOSE");
-                    doorStatus.setText("It is opened!");
+                    doorStatus.setText("It is " + barcodeInfo.getText() + " opened!");
                 } else {
                     opencloseBtn.setText("OPEN");
-                    doorStatus.setText("It is closed!");
+                    doorStatus.setText("It is " + barcodeInfo.getText() + " closed!");
                 }
             }
         });
